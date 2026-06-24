@@ -1,71 +1,19 @@
-127.0.0.1 - - [25/Jun/2026 01:18:37] "POST /upload HTTP/1.1" 200 -
-127.0.0.1 - - [25/Jun/2026 01:18:55] "OPTIONS /ai-layout-dxf HTTP/1.1" 200 -
-01:18:56 [LAYOUT] ======================================================================
-01:18:56 [LAYOUT] LAYOUT REQUEST  file_id=12b8f7be-34b6-4680-9e7d-ee2f5bdd9fa5
-01:18:56 [LAYOUT] Store size: 13.59 m × 11.69 m  (13594 × 11689 mm)
-01:18:56 [LAYOUT] Doors detected: 2  |  Columns detected: 13
-01:18:56 [LAYOUT] Selected fixtures (11 total):
-01:18:56 [LAYOUT]   [1x] IB FRAME UNIT 2.25W
-01:18:56 [LAYOUT]   [1x] IB FRAME UNIT 1.29W
-01:18:56 [LAYOUT]   [1x] LUXURY UNIT OPEN TOP 0.82W
-01:18:56 [LAYOUT]   [1x] LUXURY UNIT GLASS TOP 0.82W
-01:18:56 [LAYOUT]   [1x] AFFORDABLE FASTRACK EYEWEAR UNIT 2.25W
-01:18:56 [LAYOUT]   [1x] AFFORDABLE FASTRACK EYEWEAR UNIT 1.29W
-01:18:56 [LAYOUT]   [1x] AFFORDABLE MEN AND WOMEN UNIT 2.25W
-01:18:56 [LAYOUT]   [1x] AFFORDABLE MEN AND WOMEN UNIT 1.29W
-01:18:56 [LAYOUT]   [1x] PREM KIDS DISPLAY UNIT LGP 1.00W
-01:18:56 [LAYOUT]   [1x] SUNGLASS UNIT - WALL MOUNT - 1.22W LH
-01:18:56 [LAYOUT]   [1x] SUNGLASS UNIT - WALL MOUNT - 1.22W RH
-01:18:56 [LAYOUT] BOH rooms requested (6 room instances from 6 categories checked):
-01:18:56 [LAYOUT]   - FITTING LAB 1370x1830
-01:18:56 [LAYOUT]   - TOILET / WASH ROOM
-01:18:56 [LAYOUT]   - PANTRY
-01:18:56 [LAYOUT]   - FR ROOM (FRANCHISEE)
-01:18:56 [LAYOUT]   - STORAGE ROOM
-01:18:56 [LAYOUT]   - ELECTRICAL ROOM
-01:18:56 [LAYOUT] Clinic rooms requested (1 total):
-01:18:56 [LAYOUT]   - NORMAL CLINIC ROOM 1
-01:18:56 [LAYOUT] ----------------------------------------------------------------------
-01:19:11 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
-[TOKEN USAGE] get_ai_capacity_analysis  prompt=1306  completion=2000  total=3306
-127.0.0.1 - - [25/Jun/2026 01:19:11] "GET /capacity-analysis/12b8f7be-34b6-4680-9e7d-ee2f5bdd9fa5 HTTP/1.1" 200 -
-01:19:11 [LAYOUT] 127.0.0.1 - - [25/Jun/2026 01:19:11] "GET /capacity-analysis/12b8f7be-34b6-4680-9e7d-ee2f5bdd9fa5 HTTP/1.1" 200 -
-01:21:41 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
-[TOKEN USAGE] get_ai_layout_placements  prompt=3571  completion=15649  total=19220
-01:21:41 [LAYOUT] [recovery] Re-attempting 12 missing fixture(s) with grid fallback: ['LUXURY UNIT OPEN TOP 0.82W', 'LUXURY UNIT GLASS TOP 0.82W', 'AFFORDABLE FASTRACK EYEWEAR UNIT 1.29W', 'AFFORDABLE MEN AND WOMEN UNIT 2.25W', 'AFFORDABLE MEN AND WOMEN UNIT 1.29W', 'PREM KIDS DISPLAY UNIT LGP 1.00W', 'SUNGLASS UNIT - WALL MOUNT - 1.22W RH', 'NORMAL CLINIC ROOM 1', 'FITTING LAB 1370x1830', 'PANTRY', 'STORAGE ROOM', 'ELECTRICAL ROOM']
-01:21:49 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
-[TOKEN USAGE] get_ai_explanation  prompt=248  completion=400  total=648
-01:21:49 [LAYOUT] ======================================================================
-01:21:49 [LAYOUT] PLACEMENT SUMMARY  (best variant: Premium Open)
-01:21:49 [LAYOUT] Source: ai+recovery
-01:21:49 [LAYOUT] Placed: 11 fixtures
-01:21:49 [LAYOUT]   [PLACED 1x] FR ROOM (FRANCHISEE)
-01:21:49 [LAYOUT]   [PLACED 1x] TOILET / WASH ROOM
-01:21:49 [LAYOUT]   [PLACED 1x] IB FRAME UNIT 2.25W
-01:21:49 [LAYOUT]   [PLACED 1x] SUNGLASS UNIT - WALL MOUNT - 1.22W LH
-01:21:49 [LAYOUT]   [PLACED 1x] AFFORDABLE FASTRACK EYEWEAR UNIT 2.25W
-01:21:49 [LAYOUT]   [PLACED 1x] IB FRAME UNIT 1.29W
-01:21:49 [LAYOUT]   [PLACED 1x] NORMAL CLINIC ROOM 1
-01:21:49 [LAYOUT]   [PLACED 1x] FITTING LAB 1370x1830
-01:21:49 [LAYOUT]   [PLACED 1x] PANTRY
-01:21:49 [LAYOUT]   [PLACED 1x] STORAGE ROOM
-01:21:49 [LAYOUT]   [PLACED 1x] ELECTRICAL ROOM
-01:21:49 [LAYOUT] Skipped: 7 fixtures
-01:21:49 [LAYOUT]   [SKIPPED] LUXURY UNIT OPEN TOP 0.82W (820×400 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT]   [SKIPPED] LUXURY UNIT GLASS TOP 0.82W (820×400 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT]   [SKIPPED] AFFORDABLE FASTRACK EYEWEAR UNIT 1.29W (1290×400 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT]   [SKIPPED] AFFORDABLE MEN AND WOMEN UNIT 2.25W (2223×400 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT]   [SKIPPED] AFFORDABLE MEN AND WOMEN UNIT 1.29W (1290×400 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT]   [SKIPPED] PREM KIDS DISPLAY UNIT LGP 1.00W (1000×400 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT]   [SKIPPED] SUNGLASS UNIT - WALL MOUNT - 1.22W RH (1236×450 mm) — No free space found anywhere in the store after all placement attempts
-01:21:49 [LAYOUT] Missing from output (7 items not in any placed list):
-01:21:49 [LAYOUT]   [MISSING] LUXURY UNIT OPEN TOP 0.82W
-01:21:49 [LAYOUT]   [MISSING] LUXURY UNIT GLASS TOP 0.82W
-01:21:49 [LAYOUT]   [MISSING] AFFORDABLE FASTRACK EYEWEAR UNIT 1.29W
-01:21:49 [LAYOUT]   [MISSING] AFFORDABLE MEN AND WOMEN UNIT 2.25W
-01:21:49 [LAYOUT]   [MISSING] AFFORDABLE MEN AND WOMEN UNIT 1.29W
-01:21:49 [LAYOUT]   [MISSING] PREM KIDS DISPLAY UNIT LGP 1.00W
-01:21:49 [LAYOUT]   [MISSING] SUNGLASS UNIT - WALL MOUNT - 1.22W RH
-01:21:49 [LAYOUT] ======================================================================
-127.0.0.1 - - [25/Jun/2026 01:21:49] "POST /ai-layout-dxf HTTP/1.1" 200 -
-01:21:49 [LAYOUT] 127.0.0.1 - - [25/Jun/2026 01:21:49] "POST /ai-layout-dxf HTTP/1.1" 200 -
+app.jsx:944
+ [AI placement error] AI returned empty response (finish_reason='length').
+app.jsx:945
+ Traceback (most recent call last):
+  File "E:\store-lay-bck\bk\app.py", line 546, in ai_layout_dxf
+    ai_placements, ai_layout_style, ai_summary = get_ai_layout_placements(
+                                                 ~~~~~~~~~~~~~~~~~~~~~~~~^
+        store_boundary,
+        ^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        columns=layout_columns,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\store-lay-bck\bk\ai_advisor.py", line 683, in get_ai_layout_placements
+    raise ValueError(
+        f"AI returned empty response (finish_reason={choice.finish_reason!r})."
+    )
+ValueError: AI returned empty response (finish_reason='length').
