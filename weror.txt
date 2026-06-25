@@ -1,19 +1,4 @@
-app.jsx:944
- [AI placement error] AI returned empty response (finish_reason='length').
-app.jsx:945
- Traceback (most recent call last):
-  File "E:\store-lay-bck\bk\app.py", line 546, in ai_layout_dxf
-    ai_placements, ai_layout_style, ai_summary = get_ai_layout_placements(
-                                                 ~~~~~~~~~~~~~~~~~~~~~~~~^
-        store_boundary,
-        ^^^^^^^^^^^^^^^
-    ...<5 lines>...
-        columns=layout_columns,
-        ^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "E:\store-lay-bck\bk\ai_advisor.py", line 683, in get_ai_layout_placements
-    raise ValueError(
-        f"AI returned empty response (finish_reason={choice.finish_reason!r})."
-    )
-ValueError: AI returned empty response (finish_reason='length').
+17:19:23 [LAYOUT] Retrying request to /chat/completions in 0.394833 seconds
+17:22:23 [LAYOUT] Retrying request to /chat/completions in 0.850656 seconds
+17:22:24 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 401 Unauthorized"
+17:22:26 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 401 Unauthorized"
