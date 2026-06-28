@@ -1,4 +1,20 @@
-17:19:23 [LAYOUT] Retrying request to /chat/completions in 0.394833 seconds
-17:22:23 [LAYOUT] Retrying request to /chat/completions in 0.850656 seconds
-17:22:24 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 401 Unauthorized"
-17:22:26 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 401 Unauthorized"
+(.venv) PS E:\store-lay-bck> git log -1                 
+commit 465fd91a3d51c4d2b92cce2696ce380ccc5d7624 (HEAD -> main, upstream/main, upstream/HEAD)              
+Author: temp789456123123-max <temp789456123123@gmail.com>
+Date:   Mon Jun 29 01:13:24 2026 +0530                       
+                                                    
+    Standard door-open symbol, exclude plumbing markers from column detection,
+    and add exhaustive grid-search fallback to the DXF export safety net
+    
+    - Door symbol was a closed pie (leaf-arc-leaf), reading as a wedge slice.
+      Standard CAD convention is just the door leaf (hinge to open position)
+      plus the swing arc, with no line closing back to the hinge.
+    - detect_columns()'s geometry-only CIRCLE branch had no lower size floor
+      beyond 50mm, so small water inlet/outlet marker pairs were also being
+      classified as round columns. Raised the geometry-only minimum to 250mm
+      (named-layer columns are unaffected).
+    - The DXF export's polygon safety net only tried 8 centroid-fraction nudge
+      steps, which can still fail for an irregular polygon. Added an exhaustive
+      200mm grid search over the whole store as a final fallback so a fixture
+      is never rendered outside the real wall.
+(END)
