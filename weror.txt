@@ -1,62 +1,60 @@
-01:42:53 [LAYOUT] LAYOUT REQUEST  file_id=56088ea8-6159-47f3-8a03-9df1807bb2d4
-01:42:53 [LAYOUT] Store size: 13.59 m × 11.69 m  (13594 × 11689 mm)
-01:42:53 [LAYOUT] Doors detected: 2  |  Columns detected: 15
-01:42:53 [LAYOUT] Selected fixtures (17 total):
-01:42:53 [LAYOUT]   [2x] LUXURY UNIT OPEN TOP 0.82W
-01:42:53 [LAYOUT]   [2x] IB FRAME UNIT 2.25W
-01:42:53 [LAYOUT]   [1x] IB FRAME UNIT 1.29W
-01:42:53 [LAYOUT]   [1x] PREM KIDS DISPLAY UNIT LGP 1.00W
-01:42:53 [LAYOUT]   [1x] CASH COUNTER 1.20W
-01:42:53 [LAYOUT]   [1x] AFFORDABLE MEN AND WOMEN UNIT 1.29W
-01:42:53 [LAYOUT]   [2x] AFFORDABLE MEN AND WOMEN UNIT 2.25W
-01:42:53 [LAYOUT]   [2x] AFFORDABLE FASTRACK EYEWEAR UNIT 2.25W
-01:42:53 [LAYOUT]   [2x] SUNGLASS ANGULAR UNIT -WALL MOUNT LH
-01:42:53 [LAYOUT]   [1x] SINGLE SIDE ISLAND UNIT 2.54W
-01:42:53 [LAYOUT]   [1x] SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH
-01:42:53 [LAYOUT]   [1x] SUNGLASS UNIT - FLOOR MOUNT - 1.22W RH
-01:42:53 [LAYOUT] BOH rooms requested (3 room instances from 3 categories checked):
-01:42:53 [LAYOUT]   - FITTING LAB 1370x1830
-01:42:53 [LAYOUT]   - TOILET / WASH ROOM
-01:42:53 [LAYOUT]   - PANTRY
-01:42:53 [LAYOUT] Clinic rooms requested (2 total):
-01:42:53 [LAYOUT]   - NORMAL CLINIC ROOM 1
-01:42:53 [LAYOUT]   - PHOROPTER CLINIC ROOM 2
-01:42:53 [LAYOUT] ----------------------------------------------------------------------
-01:45:10 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
-[TOKEN USAGE] get_ai_layout_placements  prompt=4186  completion=18042  total=22228
-01:45:10 [LAYOUT] [POLYGON] vertices=33 was_invalid=False raw_area_m2=130.49 final_area_m2=130.49 geom_type=Polygon
-01:45:10 [LAYOUT] [ai-layout] Removed 1 out-of-bounds AI placements (store 13594×11689 mm, polygon shape)
-01:45:10 [LAYOUT] [ai-layout] AI missed 10 fixture(s); filling with grid fallback: ['LUXURY UNIT OPEN TOP 0.82W', 'LUXURY UNIT OPEN TOP 0.82W', 'IB FRAME UNIT 2.25W', 'IB FRAME UNIT 2.25W', 'IB FRAME UNIT 1.29W', 'PREM KIDS DISPLAY UNIT LGP 1.00W', 'CASH COUNTER 1.20W', 'SUNGLASS ANGULAR UNIT -WALL MOUNT LH', 'NORMAL CLINIC ROOM 1', 'FITTING LAB 1370x1830']
-01:45:11 [LAYOUT] [recovery] Re-attempting 7 missing fixture(s) with grid fallback: ['PREM KIDS DISPLAY UNIT LGP 1.00W', 'AFFORDABLE MEN AND WOMEN UNIT 1.29W', 'SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH', 'SUNGLASS UNIT - FLOOR MOUNT - 1.22W RH', 'PHOROPTER CLINIC ROOM 2', 'TOILET / WASH ROOM', 'PANTRY']
-01:45:21 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
-[TOKEN USAGE] get_ai_explanation  prompt=256  completion=400  total=656
-01:45:21 [LAYOUT] ======================================================================
-01:45:21 [LAYOUT] PLACEMENT SUMMARY  (best variant: Premium Open)
-01:45:21 [LAYOUT] Source: ai+grid_fallback+recovery
-01:45:21 [LAYOUT] Placed: 18 fixtures
-01:45:21 [LAYOUT]   [PLACED 1x] FITTING LAB 1370x1830
-01:45:21 [LAYOUT]   [PLACED 1x] NORMAL CLINIC ROOM 1
-01:45:21 [LAYOUT]   [PLACED 1x] CASH COUNTER 1.20W
-01:45:21 [LAYOUT]   [PLACED 1x] SUNGLASS ANGULAR UNIT -WALL MOUNT LH
-01:45:21 [LAYOUT]   [PLACED 1x] SINGLE SIDE ISLAND UNIT 2.54W
-01:45:21 [LAYOUT]   [PLACED 2x] IB FRAME UNIT 2.25W
-01:45:21 [LAYOUT]   [PLACED 1x] AFFORDABLE MEN AND WOMEN UNIT 2.25W
-01:45:21 [LAYOUT]   [PLACED 1x] IB FRAME UNIT 1.29W
-01:45:21 [LAYOUT]   [PLACED 2x] AFFORDABLE FASTRACK EYEWEAR UNIT 2.25W
-01:45:21 [LAYOUT]   [PLACED 2x] LUXURY UNIT OPEN TOP 0.82W
-01:45:21 [LAYOUT]   [PLACED 1x] PREM KIDS DISPLAY UNIT LGP 1.00W
-01:45:21 [LAYOUT]   [PLACED 1x] AFFORDABLE MEN AND WOMEN UNIT 1.29W
-01:45:21 [LAYOUT]   [PLACED 1x] PHOROPTER CLINIC ROOM 2
-01:45:21 [LAYOUT]   [PLACED 1x] TOILET / WASH ROOM
-01:45:21 [LAYOUT]   [PLACED 1x] PANTRY
-01:45:21 [LAYOUT] Skipped: 2 fixtures
-01:45:21 [LAYOUT]   [SKIPPED] SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH (1236×450 mm) — No free space found anywhere in the store after all placement attempts
-01:45:21 [LAYOUT]   [SKIPPED] SUNGLASS UNIT - FLOOR MOUNT - 1.22W RH (1236×450 mm) — No free space found anywhere in the store after all placement attempts
-01:45:21 [LAYOUT] Missing from output (2 items not in any placed list):
-01:45:21 [LAYOUT]   [MISSING] SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH
-01:45:21 [LAYOUT]   [MISSING] SUNGLASS UNIT - FLOOR MOUNT - 1.22W RH
-01:45:21 [LAYOUT] ======================================================================
-127.0.0.1 - - [29/Jun/2026 01:45:21] "POST /ai-layout-dxf HTTP/1.1" 200 -
-01:45:21 [LAYOUT] 127.0.0.1 - - [29/Jun/2026 01:45:21] "POST /ai-layout-dxf HTTP/1.1" 200 -
-127.0.0.1 - - [29/Jun/2026 01:46:35] "GET /download-ai-layout/56088ea8-6159-47f3-8a03-9df1807bb2d4?variant=0 HTTP/1.1" 200 -
-01:46:35 [LAYOUT] 127.0.0.1 - - [29/Jun/2026 01:46:35] "GET /download-ai-layout/56088ea8-6159-47f3-8a03-9df1807bb2d4?variant=0 HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jun/2026 02:27:16] "POST /upload HTTP/1.1" 200 -
+[TOKEN USAGE] get_ai_capacity_analysis  prompt=1306  completion=2000  total=3306
+127.0.0.1 - - [29/Jun/2026 02:27:37] "GET /capacity-analysis/0eeb7b56-f301-4eb5-a039-4030ec73fa4a HTTP/1.1" 200 -
+127.0.0.1 - - [29/Jun/2026 02:28:58] "OPTIONS /ai-layout-dxf HTTP/1.1" 200 -
+02:28:58 [LAYOUT] ======================================================================
+02:28:58 [LAYOUT] LAYOUT REQUEST  file_id=0eeb7b56-f301-4eb5-a039-4030ec73fa4a
+02:28:58 [LAYOUT] Store size: 13.59 m × 11.69 m  (13594 × 11689 mm)
+02:28:58 [LAYOUT] Doors detected: 2  |  Columns detected: 15
+02:28:58 [LAYOUT] Selected fixtures (15 total):
+02:28:58 [LAYOUT]   [1x] SINGLE SIDE ISLAND UNIT 2.54W
+02:28:58 [LAYOUT]   [1x] SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH
+02:28:58 [LAYOUT]   [1x] SUNGLASS UNIT - FLOOR MOUNT - 1.22W RH
+02:28:58 [LAYOUT]   [2x] IB FRAME UNIT 2.25W
+02:28:58 [LAYOUT]   [2x] LUXURY UNIT OPEN TOP 0.82W
+02:28:58 [LAYOUT]   [2x] AFFORDABLE FASTRACK EYEWEAR UNIT 2.25W
+02:28:58 [LAYOUT]   [1x] AFFORDABLE MEN AND WOMEN UNIT 2.25W
+02:28:58 [LAYOUT]   [1x] AFFORDABLE MEN AND WOMEN UNIT 1.29W
+02:28:58 [LAYOUT]   [1x] PREM KIDS DISPLAY UNIT LGP 1.00W
+02:28:58 [LAYOUT]   [2x] SUNGLASS ANGULAR UNIT -WALL MOUNT LH
+02:28:58 [LAYOUT]   [1x] CASH COUNTER 1.20W
+02:28:58 [LAYOUT] BOH rooms requested (3 room instances from 3 categories checked):
+02:28:58 [LAYOUT]   - FITTING LAB 1370x1830
+02:28:58 [LAYOUT]   - TOILET / WASH ROOM
+02:28:58 [LAYOUT]   - PANTRY
+02:28:58 [LAYOUT] Clinic rooms requested (2 total):
+02:28:58 [LAYOUT]   - PHOROPTER CLINIC ROOM 1
+02:28:58 [LAYOUT]   - NORMAL CLINIC ROOM 2
+02:28:58 [LAYOUT] ----------------------------------------------------------------------
+02:31:04 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
+[TOKEN USAGE] get_ai_layout_placements  prompt=4355  completion=17756  total=22111
+02:31:04 [LAYOUT] [POLYGON] vertices=33 was_invalid=False raw_area_m2=130.49 final_area_m2=130.49 geom_type=Polygon
+02:31:04 [LAYOUT] [ai-layout] Removed 2 out-of-bounds AI placements (store 13594×11689 mm, polygon shape)
+02:31:04 [LAYOUT] [ai-layout] AI missed 8 fixture(s); filling with grid fallback: ['SINGLE SIDE ISLAND UNIT 2.54W', 'SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH', 'IB FRAME UNIT 2.25W', 'LUXURY UNIT OPEN TOP 0.82W', 'PREM KIDS DISPLAY UNIT LGP 1.00W', 'SUNGLASS ANGULAR UNIT -WALL MOUNT LH', 'CASH COUNTER 1.20W', 'PHOROPTER CLINIC ROOM 1']
+02:31:05 [LAYOUT] [recovery] Re-attempting 3 missing fixture(s) with grid fallback: ['AFFORDABLE MEN AND WOMEN UNIT 1.29W', 'NORMAL CLINIC ROOM 2', 'TOILET / WASH ROOM']
+02:31:19 [LAYOUT] HTTP Request: POST https://ai.titan.in/gateway/chat/completions "HTTP/1.1 200 OK"
+[TOKEN USAGE] get_ai_explanation  prompt=263  completion=400  total=663
+02:31:19 [LAYOUT] ======================================================================
+02:31:19 [LAYOUT] PLACEMENT SUMMARY  (best variant: Premium Open)
+02:31:19 [LAYOUT] Source: ai+grid_fallback+recovery
+02:31:19 [LAYOUT] Placed: 18 fixtures
+02:31:19 [LAYOUT]   [PLACED 1x] PANTRY
+02:31:19 [LAYOUT]   [PLACED 1x] FITTING LAB 1370x1830
+02:31:19 [LAYOUT]   [PLACED 1x] PHOROPTER CLINIC ROOM 1
+02:31:19 [LAYOUT]   [PLACED 1x] CASH COUNTER 1.20W
+02:31:19 [LAYOUT]   [PLACED 1x] SUNGLASS UNIT - FLOOR MOUNT - 1.22W LH
+02:31:19 [LAYOUT]   [PLACED 1x] SINGLE SIDE ISLAND UNIT 2.54W
+02:31:19 [LAYOUT]   [PLACED 1x] AFFORDABLE FASTRACK EYEWEAR UNIT 2.25W
+02:31:19 [LAYOUT]   [PLACED 1x] IB FRAME UNIT 2.25W
+02:31:19 [LAYOUT]   [PLACED 1x] AFFORDABLE MEN AND WOMEN UNIT 2.25W
+02:31:19 [LAYOUT]   [PLACED 2x] LUXURY UNIT OPEN TOP 0.82W
+02:31:19 [LAYOUT]   [PLACED 2x] SUNGLASS ANGULAR UNIT -WALL MOUNT LH
+02:31:19 [LAYOUT]   [PLACED 1x] SUNGLASS UNIT - FLOOR MOUNT - 1.22W RH
+02:31:19 [LAYOUT]   [PLACED 1x] PREM KIDS DISPLAY UNIT LGP 1.00W
+02:31:19 [LAYOUT]   [PLACED 1x] AFFORDABLE MEN AND WOMEN UNIT 1.29W
+02:31:19 [LAYOUT]   [PLACED 1x] NORMAL CLINIC ROOM 2
+02:31:19 [LAYOUT]   [PLACED 1x] TOILET / WASH ROOM
+02:31:19 [LAYOUT] Skipped: 0 fixtures — all placed successfully
+02:31:19 [LAYOUT] ======================================================================
+127.0.0.1 - - [29/Jun/2026 02:31:19] "POST /ai-layout-dxf HTTP/1.1" 200 -
+02:31:19 [LAYOUT] 127.0.0.1 - - [29/Jun/2026 02:31:19] "POST /ai-layout-dxf HTTP/1.1" 200 -
